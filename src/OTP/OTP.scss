@@ -1,0 +1,53 @@
+.otp-parent {
+    max-width: 70vw;
+    margin: 0px auto;
+    padding: 15px;
+    border: 1px solid red;
+    text-align: center;
+
+    .input-otp {
+        margin: auto;
+        width: 40vw;
+        border: none;
+        border-radius: 5px;
+        height: 300px;
+        box-shadow: 0px 5px 20px 0px #d2dae3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            color: red;
+        }
+
+        h5 {
+            color: red
+        }
+    }
+
+    .otp-value {
+        width: 40px !important;
+        height: 40px;
+        margin: 0 0.5rem;
+        box-shadow: none;
+        border: 1px solid #e4e4e4;
+        border-radius: 3px;
+    }
+
+    .otp-value:focus {
+        outline: 2px solid red;
+    }
+
+    .action {
+        margin: 0px;
+
+        .clear {
+            margin: 0px 3px;
+        }
+
+        .confirm {
+            margin: 0px 3px;
+        }
+    }
+}
