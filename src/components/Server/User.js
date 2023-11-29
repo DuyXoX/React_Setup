@@ -1,5 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect } from 'react';
+import Search from "./Search";
+import "./User.scss"
 
 // class User extends React.Component {//Su dung Class
 
@@ -68,11 +70,14 @@ const User = () => {
         fetchData();
     }, []); // [] để đảm bảo useEffect chỉ chạy một lần sau khi mount
 
-    console.log("Run render");
+    // console.log("Run render");
 
     return (
-        <div>
-            MASP List: {maspList.map(item => item.name).join(", ")}
+        <div className="user-parent">
+            <div className="user-api">
+                MASP List: {maspList.map(item => item.name).join(", ")}
+            </div>
+            <Search />
         </div>
     );
 }

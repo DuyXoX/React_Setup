@@ -1,0 +1,35 @@
+.user-parent {
+    .user-api {
+        color: rgb(255, 127, 155)
+    }
+
+    .search-input {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+
+        input {
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+
+        input:focus {
+            border: none;
+            border-radius: 3px;
+            outline: 2px solid red;
+        }
+
+
+
+    }
+
+    .result {
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}

@@ -17,13 +17,11 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  useParams
 } from "react-router-dom";
 import axios from 'axios';
-
-
-
-
+import UserByID from './components/Server/UserByID';
 
 
 const App = () => {
@@ -70,8 +68,11 @@ const App = () => {
           <Route path="/product">
             <Product />
           </Route>
-          <Route path="/user">
+          <Route path="/user" exact>
             <User />
+          </Route>
+          <Route path="/users/:id" >
+            <UserByID />
           </Route>
           <Route path="*">
             <div>404 Not Foun!</div>
