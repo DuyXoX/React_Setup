@@ -75,6 +75,7 @@ const Search = () => {
                             <div className="name">Name: {item.name}</div>
                             <div className="phone">Phone: {item.phone}</div>
                             <div className="email">Email: {item.email}</div>
+                            <div className="address">Address: {item.address.street} {item.address.suite} {item.address.city} {item.address.zipcode}</div>
                             <div className="website"><span onClick={() => handleView(item.website)}>website: {item.website}</span></div>
                         </div>
                     )

@@ -23,6 +23,7 @@ function Header() {
                         <NavLink to="/otp" className="nav-link">OTP</NavLink>
                         <NavLink to="/product" className="nav-link">Product</NavLink>
                         <NavLink to="/user" className="nav-link">User</NavLink>
+                        <NavLink to="/sanpham" className="nav-link">San Pham</NavLink>
                         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">

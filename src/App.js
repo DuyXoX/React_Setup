@@ -22,6 +22,9 @@ import {
 } from "react-router-dom";
 import axios from 'axios';
 import UserByID from './components/Server/UserByID';
+import SanPham from './components/SanPham/sanpham';
+import SanPhamUpdate from './components/SanPham/SanPhamUpdate';
+import SanPhamDelete from './components/SanPham/SanPhamDelete';
 
 
 const App = () => {
@@ -73,6 +76,15 @@ const App = () => {
           </Route>
           <Route path="/users/:id" >
             <UserByID />
+          </Route>
+          <Route path="/sanpham" exact>
+            <SanPham />
+          </Route>
+          <Route path="/sp/updateSP/:id" exact>
+            < SanPhamUpdate />
+          </Route>
+          <Route path="/sp/delete/:id" exact>
+            < SanPhamDelete />
           </Route>
           <Route path="*">
             <div>404 Not Foun!</div>
