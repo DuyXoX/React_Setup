@@ -5,7 +5,7 @@ import CountDown from './CountDown';
 import CountDownAnimation from './CountDownAnimation';
 
 const InPutOTP = (props) => {
-    const childRef = useRef() //Ref la ham khai bao su dung de lien ket tu Con sang Cha
+    const childRef = useRef(null) //Ref la ham khai bao su dung de lien ket tu Con sang Cha
     const [otp, setOtp] = useState('')
     const handleChange = (otp) => {
         setOtp(otp)

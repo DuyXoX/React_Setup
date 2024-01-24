@@ -30,7 +30,7 @@ import SanPhamDelete from './components/SanPham/SanPhamDelete';
 const App = () => {
   const x = [1, 2, 3, { name: 'XoX' }]
   // console.log('Value', x);
-  console.log(axios.isCancel('something'));
+  // console.log(axios.isCancel('something'));
   return (
     <Router>
       <Container className=''>

@@ -1,6 +1,6 @@
-import { forwardRef, useEffect, useImperativeHandle, useState } from 'react';
-import { Button } from 'react-bootstrap';
+import React, { forwardRef, useEffect, useImperativeHandle, useState } from 'react';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer'
+import CounDownTimer from './CounDownTimer';
 
 
 
@@ -10,24 +10,24 @@ const CountDownAnimation = forwardRef((props, ref) => { // forwardRef dung ke li
     const [isTimeUp, setIsTimeUp] = useState(false)
 
     const renderTime = ({ remainingTime }) => {
+        CounDownTimer(remainingTime, isTimeUp, setisDisableBtn, setIsTimeUp)
 
-        if (remainingTime === 0 && !isTimeUp) {
-            setIsTimeUp(true)
-            setisDisableBtn(true)
-        }
         return (
             <div className="timer">
                 <div className="value">{remainingTime}</div>
             </div>
         )
+
     }
 
-    useImperativeHandle(ref, () => ({
-        resTimer() {
-            setIsTimeUp(false)
-            setisDisableBtn(false)
+    useImperativeHandle(ref, () => {
+        return {
+            resTimer() {
+                setIsTimeUp(false)
+                setisDisableBtn(false)
+            }
         }
-    }), [setIsTimeUp, setisDisableBtn]);
+    }, [setIsTimeUp, setisDisableBtn]);
 
     return (
         <div>
@@ -54,4 +54,4 @@ const CountDownAnimation = forwardRef((props, ref) => { // forwardRef dung ke li
 })
 
 
-export default CountDownAnimation;
+export default React.memo(CountDownAnimation);//React.meno chi rerender khi gia tri thay doi, han che rerender nhieu lan
