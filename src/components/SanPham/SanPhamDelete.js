@@ -1,8 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom/cjs/react-router-dom.min";
+import { useParams } from "react-router-dom";
 import SanPhamTable from "./SanPhamTable";
 import { values } from "lodash";
+
 
 const SanPhamDelete = () => {
     const { id } = useParams()

@@ -1,8 +1,8 @@
 import { Button } from "react-bootstrap";
-import pictures_1 from "../asset/img/pictures_1.png";
-import pictures_2 from "../asset/img/pictures_2.png";
-import pictures_3 from "../asset/img/pictures_3.png";
-import pictures_4 from "../asset/img/pictures_4.png";
+import pictures_1 from "../assets/img/pictures_1.png";
+import pictures_2 from "../assets/img/pictures_2.png";
+import pictures_3 from "../assets/img/pictures_3.png";
+import pictures_4 from "../assets/img/pictures_4.png";
 import { useState } from "react";
 import Lightbox from 'react-18-image-lightbox';
 

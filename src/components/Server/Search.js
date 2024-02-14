@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { Button } from "react-bootstrap";
 import _ from "lodash";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Search = () => {
     const [keyWord, setkeyWord] = useState('')
@@ -10,7 +10,7 @@ const Search = () => {
     const [isLoadingData, setisLoadingData] = useState(false)
     const [inputKeyWord, setinputKeyWord] = useState(false)
 
-    let history = useHistory()
+    let navigate = useNavigate()
 
     const handleSearchBtn = async () => {
         setisLoadingData(true)
@@ -50,7 +50,7 @@ const Search = () => {
     }
 
     const handleView = (website) => {
-        history.push(`/users/${website}`)
+        navigate.push(`/users/${website}`)
     }
 
     return (

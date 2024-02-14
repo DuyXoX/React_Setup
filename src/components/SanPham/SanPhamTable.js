@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react";
 import moment from "moment";
-import { Link, useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { Button, Table } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const SanPhamTable = (props) => {
     const { sanphamProduct } = props
-    let history = useHistory()
+    let navigate = useNavigate()
     const handleUpdate = (id) => {
-        history.push(`/sp/updateSP/${id}`)
+        navigate.push(`/sp/updateSP/${id}`)
     }
     const handleDelete = (id) => {
-        history.push(`/sp/delete/${id}`)
+        navigate.push(`/sp/delete/${id}`)
     }
 
-    console.log("check sanphamProduct", sanphamProduct);
+    // console.log("check sanphamProduct", sanphamProduct);
     return (
         < div class="table-responsive">
 

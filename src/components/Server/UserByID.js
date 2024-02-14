@@ -3,7 +3,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 import UserInfo from "./component/UserInfo";
-import { map } from "lodash";
+// import { map } from "lodash";
 
 
 const UserByID = () => {
@@ -26,7 +26,7 @@ const UserByID = () => {
 
         }
         getUserByID()
-    }, [])
+    }, [id])
 
 
     return (

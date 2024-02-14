@@ -1,0 +1,43 @@
+// .container {
+//     .slick-slider {
+//         .slick-list {
+//             .slick-track {
+//                 .img-slider {
+//                     width: 100%;
+//                     height: 25dvh;
+//                     object-fit: cover;
+//                 }
+//             }
+//         }
+//     }
+// }.
+.slick-dots {
+    bottom: 10px;
+
+    .slick-active button:before {
+        color: #198761 !important;
+    }
+
+    li {
+        button:before {
+            font-size: 8px;
+            color: #198761;
+        }
+    }
+}
+
+
+
+.img-slider {
+    width: 100%;
+    height: 25svh;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.img-slider-one {
+    width: 100%;
+    height: 12svh;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
